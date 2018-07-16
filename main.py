@@ -16,7 +16,7 @@ if os.path.exists('sketch.png'):
 shutil.copy('default.png', 'sketch.png')
 options = Options()
 # options.add_argument("--headless")
-driver = webdriver.Firefox(firefox_options=options, executable_path='')
+driver = webdriver.Firefox(firefox_options=options)
 driver.set_window_size(1366, 768)  # 1354 x 687
 driver.get('https://standalone-proxy-prod.wsop.playtika.com/355-39865c8869b30965052f6ebfc21b98bc2044f586/index.html')  # https://www.pointerpointer.com/
 # window = wnd.Window(driver)
